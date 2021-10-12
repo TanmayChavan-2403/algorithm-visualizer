@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title> Visulizer </title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="static/index.css">
+    <script src="static/main.js"></script>
+    <script src="static/dijkstras.js" ></script>
+    <script src="static/Sorting Algorithms/quickSort.js"></script>
+    <script src="static/Searching Algorithms/binarySearch.js"></script>
+    <script src="static/Searching Algorithms/linearSearch.js"></script>
+    <script src="static/Searching Algorithms/jumpSearch.js"></script>
+</header>
+
+<body>
+
+    <div class="thief-target-selection-container">
+        <div class="sub-container">
+            <div class="sub-container-header">
+                <h2> Please Enter Target for your Theif </h2>
+            </div>
+
+            <div class="sub-container-input">
+                <h3> Enter Target please :-  </h3>
+                <input type="text" id=''>
+            </div>
+            <button onclick="submitTarget()">
+                Done
+            </button>
+
+            <div class="sub-container-info" >
+                <img src="Images/info.png" alt="">
+                <div class="sub-container-info-image"></div>
+                <div class="sub-container-info-content">
+                    <p> You can choose Whatever number you want. If you choose target which is 
+                        not in the thief numbers which you gave just before then <strong>POLICE</strong> won't be able to find 
+                        the thieves, but if you do choose number from those numbers then <strong>POLICE</strong> will be 
+                        able to catch those thieves
+                    </p>
+                </div>
+            </div>
+
+            <div class="sub-continer-warning">
+                <p> Please enter some value! </p>
+            </div>
+
+        </div>
+    </div>
+
+    <button id="visualize" onclick="catchThief()">
+        Catch the Thief
+    </button>
+
+    <div class="controls">
+
+        <div class="thieves-selection">
+            <div class="thieves-number">
+            </div>
+            <div class="thieves-info" onclick="checkForThiefDeploys()">
+                <img src="Images/tick.png" alt="">
+            </div>
+        </div>
+
+        <div class="thief">
+            <h3> Select no of thives </h3>
+            <div class="thieves-no">
+                <input type="text" id="thiefPopulation">
+            </div>
+            <button onclick="validateNumber()">
+                Done selecting number of thieves ?
+            </button>
+        </div>
+
+        <div class="sorting-algorithms">
+            <div class="algo" onclick="chooseAlgo('QuickSort', 'sorting-algorithms') ">
+                <h2>Quick Sort</h2>
+            </div>
+            <div class="algo" onclick="chooseAlgo('BubbleSort', 'sorting-algorithms') ">
+                <h2>Bubble Sort</h2>
+            </div>
+            <div class="algo" onclick="chooseAlgo('SelectionSort', 'sorting-algorithms') ">
+                <h2> Selection Sort </h2>
+            </div>
+
+            <div class="algo algo-submit">
+                <h2> Choose Algorithm for Sorting </h2>
+            </div>
+        </div>
+
+        <div class="algorithms">
+
+            <div class="algo" onclick="chooseAlgo('BinarySearch', 'algorithms') ">
+                <h2>Binary Search</h2>
+            </div>
+            <div class="algo" onclick="chooseAlgo('LinearSerach', 'algorithms') ">
+                <h2>Linear Search</h2>
+            </div>
+            <div class="algo" onclick="chooseAlgo('JumpSearch', 'algorithms') ">
+                <h2>Jump Search</h2>
+            </div>
+
+            <div class="algo algo-submit">
+                <h2> Choose Algorithm for searching </h2>
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+    <div id="field"></div>
+
+    <script>
+
+        
+
+        
+    </script>
+
+</body>
+
+</html>
